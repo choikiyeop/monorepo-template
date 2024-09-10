@@ -3,6 +3,12 @@
   "compilerOptions": {
     "outDir": "dist"
   },
-  "include": ["src", "turbo", "postcss.config.js", "tailwind.config.ts"],
+  "include": [
+    "src",
+    "turbo",
+    "postcss.config.mjs",
+    "tailwind.config.ts",
+    "index.tsx"
+  ],
   "exclude": ["node_modules", "dist"]
 }
