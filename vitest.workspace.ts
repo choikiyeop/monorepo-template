@@ -6,6 +6,7 @@ export default defineWorkspace([
       name: 'ui',
       include: ['packages/ui/**/*.test.{ts,tsx}'],
       environment: 'jsdom',
+      setupFiles: ['./vitest.setup.ts'],
     },
   },
   {
@@ -13,6 +14,7 @@ export default defineWorkspace([
       name: 'web',
       include: ['apps/web/**/*.test.{ts,tsx}'],
       environment: 'jsdom',
+      setupFiles: ['./vitest.setup.ts'],
     },
   },
 ]);
