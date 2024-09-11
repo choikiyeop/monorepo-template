@@ -5,6 +5,7 @@
   },
   "include": [
     "src",
+    "lib",
     "turbo",
     "postcss.config.mjs",
     "tailwind.config.ts",
