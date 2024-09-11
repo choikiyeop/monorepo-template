@@ -4,10 +4,16 @@
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
+    "dev:web": "turbo run dev --filter ui --filter web",
     "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "prepare": "husky"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.4.1",
+    "@commitlint/config-conventional": "^19.4.1",
+    "husky": "^9.1.5",
+    "lint-staged": "^15.2.10",
     "prettier": "^3.2.5",
     "turbo": "^2.1.1",
     "typescript": "^5.4.5"
